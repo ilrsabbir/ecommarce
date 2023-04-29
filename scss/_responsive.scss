@@ -1,0 +1,124 @@
+@media (max-width: 957px) {
+
+    header .header nav .icon i{
+        display: block;
+    }
+    header nav menu .contact::after{
+        display: none;
+    }
+    header .header nav menu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        right: -110%;
+        top: 100%;
+        background-color: $off-bg;
+        grid-template-columns: 1fr;
+        transition: .3s all ease-in-out;
+        z-index: 1000;
+    }
+    header .header nav menu ul{
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        margin: 30px 60px;
+    }
+    .header nav menu ul li{
+        padding: 15px;
+    }
+    .header nav menu ul li a{
+        padding: 5px 15px;
+    }
+    .header nav menu .contact{
+        padding: 100px;
+    }
+    header{
+        overflow: visible;
+    }
+    #home .home .right .details h1{
+        font-size: 5rem !important;
+        line-height: 4rem;
+    }
+    #home .home .right .details h5{
+        font-size: 4rem !important;
+    }
+    #home .home .right .details .tag .order h3{
+        font-size: 1.5rem !important;
+    }
+    #home .home .right .details .tag .off h3,
+    #home .home .right .details .tag .off h4{
+        font-size: 1.2rem;
+    }
+
+    #home .home .box img{
+        height: 450px !important;
+    }
+}
+
+
+@media (max-width: 450px) {
+    header .logo img{
+        height: 30px;
+    }
+}
+
+@media (max-width: 1185px){
+    #home .home .right .details .tag .order h3{
+        font-size: 2rem;
+    }
+    #home .home .right .details .tag .off h3,
+    #home .home .right .details .tag .off h4{
+        font-size: 1.5rem;
+    }
+    #home .home .box img{
+        height: 500px;
+    }
+    
+}
+@media (max-width: 815px) {
+    #home .home .box.left{
+        align-items: center;
+    }
+    
+    #home .home .box img{
+        height: 300px !important;
+    }
+    #home .home .right .details p{
+        font-size: 1rem !important;
+    }
+    #home .home .right .details h1{
+        font-size: 4rem !important;
+        line-height: 3rem;
+    }
+    #home .home .right .details h5{
+        font-size: 3rem !important;
+    }
+    #home .home .right .details .tag .order h3{
+        font-size: 1.5rem !important;
+    }
+    #home .home .right .details .tag .order h3{
+        font-size: 1.2rem !important;
+    }
+    #home .home .right .details .tag .order h4{
+        font-size: .7rem !important;
+    }
+    #home .home .right .details .tag .off h3,
+    #home .home .right .details .tag .off h4{
+        font-size: 1rem;
+    }
+    
+}
+@media (max-width: 605px) {
+    #home .home .box.left{
+        height: fit-content;
+        margin-top: 120px;
+    }
+    #home .home .box.right{
+        height: fit-content;
+        margin-top: -100px;
+    }
+    #home .home{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}

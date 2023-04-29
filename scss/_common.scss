@@ -1,0 +1,31 @@
+
+$bg: #f1e5d9;
+$off-bg: #e4c09d;
+
+$txt1: white;
+$txt2: black;
+$txt3: #d49556;
+
+$ff1: 'Montserrat', sans-serif;
+@font-face {
+    font-family: ff2;
+    src: url(../ff2.otf);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}

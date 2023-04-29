@@ -1,0 +1,91 @@
+#home{
+    height: 100vh;
+    width: 100%;
+    background: $bg;
+}
+
+#home .home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+#home .home .box.left{
+    display: flex;
+    align-items: end;
+    height: 100vh;
+}
+#home .home .box.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#home .home .right .details p{
+    text-transform: uppercase;
+    font-family: $ff1;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: end;
+}
+#home .home .right .details h1{
+    font-size: 6rem;
+    font-family: $ff1;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 5rem;
+    text-align: end;
+}
+#home .home .right .details h5{
+    font-family: ff2;
+    font-size: 5rem;
+    color: $txt3;
+    text-align: end;
+    transform: rotate(-20deg) translate(-20px, -10px);
+    
+}
+#home .home .right .details .tag{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#home .home .right .details .tag .order{
+    background-color: black;
+    padding: 10px 20px;
+}
+#home .home .right .details .tag .order h3{
+    text-transform: uppercase;
+    font-family: $ff1;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: end;
+    color: $txt1;
+}
+#home .home .right .details .tag .order h4{
+    text-transform: uppercase;
+    font-family: $ff1;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: end;
+    color: $txt1;
+
+}
+#home .home .right .details .tag .off{
+    background-color: $off-bg;
+}
+#home .home .right .details .tag .off h3{
+    text-transform: uppercase;
+    font-family: $ff1;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 7px;
+}
+#home .home .right .details .tag .off h4{
+    text-transform: uppercase;
+    font-family: $ff1;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+#home .home .box img{
+    height: 550px;
+}

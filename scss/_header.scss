@@ -1,0 +1,88 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: $bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+header .header{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+header .logo img{
+    height: 50px;
+}
+header .header nav .icon{
+    position: absolute;
+    right: 5%;
+    z-index: 10;
+    top: 40px;
+}
+header .header nav .icon i{
+    display: none;
+}
+
+header .header nav menu{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+header nav menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 10px;
+}
+header nav menu ul li{
+    padding: 0 10px;
+}
+header nav menu ul li a{
+    text-decoration: none;
+    color: $txt2;
+    font-family: $ff1;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+header nav menu ul li a:hover{
+    background-color: white;
+}
+header nav menu ul li a.active{
+    background-color: white;
+}
+header nav menu .contact{
+    position: relative;
+    z-index: 2;
+}
+header nav menu .contact::after{
+    position: absolute;
+    content: "";
+    top: -220px;
+    right: -150px;
+    height: 300px;
+    width: 300px;
+    background: white;
+    border-radius: 50%;
+    z-index: -2;
+}
+header nav menu .contact p{
+    font-family: $ff1;
+    color: $txt2;
+    font-weight: 500;
+    font-size: .7rem;
+    text-transform: uppercase;
+    text-align: end;
+}
+header nav menu .contact .num{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+header nav .icon i{
+    cursor: pointer;
+}
